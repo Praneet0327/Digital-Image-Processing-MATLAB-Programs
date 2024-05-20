@@ -6,7 +6,7 @@ close all
 % MATLAB Program to demonstrate Geometric transformations
 
 % Image Scaling (Resize)
-I  = imread('/Users/praneet/Desktop/ADGIPS/Sem VI/Labs/DIP_Lab/P-1/SpaceX Falcon Heavy.jpg');
+I  = imread('Image Path');
 subplot(3,2,1); imshow(I); title('Original Image'); 
 
 s = input('Enter Scaling Factor'); 
