@@ -1,5 +1,5 @@
 % MATLAB Program to compute the mean, SD and Correlation coefficient of an image 
-i=imread('/Users/praneet/Desktop/ADGIPS/Sem VI/Labs/DIP_Lab/P-4/Bannf_Park_Canada.jpg'); 
+i=imread('Image Path'); 
 subplot(2,2,1); imshow(i);title('Original Image'); 
 
 g=rgb2gray(i); 

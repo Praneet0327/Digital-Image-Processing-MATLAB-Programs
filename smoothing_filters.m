@@ -1,6 +1,6 @@
 %MATLAB Program for the implementation of Image Smoothening Filters
 % Median Filters 
-I=imread('/Users/praneet/Desktop/ADGIPS/Sem VI/Labs/DIP_Lab/P-5/Ladakh.jpg'); 
+I=imread('Image Path'); 
 K = rgb2gray(I); 
 J= imnoise(K ,'salt & pepper',0.05); 
 f= medfilt2(J,[3,3]); 
@@ -14,7 +14,7 @@ subplot(3,2,5); imshow(f1); title('10x10 Image');
 
 % Mean Filter and Average Filter 
 figure; 
-i=imread('/Users/praneet/Desktop/ADGIPS/Sem VI/Labs/DIP_Lab/P-5/Ladakh.jpg'); 
+i=imread('Image Path'); 
 g=rgb2gray(i); 
 g1=fspecial('average',[3 3]); 
 b1 = imfilter(g,g1); 
@@ -29,7 +29,7 @@ subplot(2,2,4); imshow(b2); title('10x10 Image');
 
 % Implementation of filter using Convolution 
 figure; 
-I= imread('/Users/praneet/Desktop/ADGIPS/Sem VI/Labs/DIP_Lab/P-5/Ladakh.jpg'); 
+I= imread('Image Path'); 
 I=I(:,:,1); subplot(2,2,1); imshow(I); title('Original Image'); 
 
 a=[0.001 0.001 0.001; 0.001 0.001 0.001; 0.001 0.001 0.001]; 

@@ -1,8 +1,3 @@
-%Coded by Praneet
-clc
-clear all 
-close all
-
 % MATLAB Program to demonstrate Geometric transformations
 
 % Image Scaling (Resize)

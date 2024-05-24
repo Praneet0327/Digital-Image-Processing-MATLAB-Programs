@@ -1,8 +1,4 @@
-% The code is divided in two parts
-
-% First part
 % MATLAB Program to display of FFT (1-D & 2-D) of an image 
-% This code is to be executed after commenting out the second part
 l=im2double(imread('Image Path')); 
 f1=fft(l); 
 f2=fftshift(f1); 
@@ -15,9 +11,7 @@ l=fft2(f1);
 l1=real(l); 
 subplot(2,2,4); imshow(l1);title('2-D FFT');
 
-% Second part
 % MATLAB Program to represent the content of an image using DFT
-% This code is to be executed after commenting out the first part
 im = imread('Image Path');
 im = rgb2gray(im); 
 subplot(2,3,1); imshow(im); title('Original'); 
